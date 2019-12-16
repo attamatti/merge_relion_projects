@@ -39,7 +39,7 @@ the project dirs where all of the paticles originally came from need to be inclu
 try:
 	labels,header,stardata= read_starfile_new(sys.argv[1])	
 except:
-	sys.exit("\nERROR reading starfile: {0}{1}".format(sys.argv[1],errmsg))
+	sys.exit("\nERROR reading starfile {0}".format(errmsg))
 
 ## check that the original project dir data paths exists
 datapaths = sys.argv[2:]
